@@ -1,4 +1,0 @@
-hospital.Doctor	tom	k44	12.0	40	480.0	45	10	
-hospital.Surgeon	joe	l47	15.0	40	600.0	15	5	5	15	4	
-hospital.PaediatricSurgeon	liam	j78	45.0	40	1800.0	19	17	17	17	5	15	15	5	
-hospital.MedicalStudent	pop	v12	1.0	15	15.0	47	0	5	2015	
