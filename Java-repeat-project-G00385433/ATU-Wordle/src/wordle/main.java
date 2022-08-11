@@ -39,7 +39,7 @@ public class main {
         WordleDB.close();
         
         //Start wordle logic
-        String WordleOfTheDay = WordleWord[231].toUpperCase();//WordleWord[dayOfYear - 1].toUpperCase();
+        String WordleOfTheDay = WordleWord[dayOfYear - 1].toUpperCase();
     
    
         String WordleOfTheDayArray[] = new String[6];
