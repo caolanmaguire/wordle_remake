@@ -5,4 +5,4 @@
 # Java Wordle - game - console application <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px" height="30px" />
 
 ![What-this-project-looks-like](screenshots/atu-wordle.PNG)
-![What-this-project-looks-like-two](atu-wordle-2.PNG)
+![What-this-project-looks-like-two](screenshots/atu-wordle-2.PNG)
