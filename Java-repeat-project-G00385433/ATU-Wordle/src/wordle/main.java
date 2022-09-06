@@ -4,6 +4,10 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.Scanner;
+
+import hospital.HospitalWorker;
+import hospital.Nurse;
+
 import java.util.Calendar;
 
 public class main {
@@ -13,7 +17,9 @@ public class main {
 
 		Scanner console = new Scanner(System.in);
 		
-		//output files for questionaire data
+		
+		//output files for wordle
+		PrintWriter RecordFile = new PrintWriter("worlde-record.txt");
 		PrintWriter FullWordDatabase = new PrintWriter("full_word_database.txt");
 				
 		Calendar calOne = Calendar.getInstance();
@@ -109,15 +115,31 @@ public class main {
         if(WordleFound == 0) {
         	//User has not found word
         	System.out.println("Afraid you didn't guess the full word today - the word is : " + WordleOfTheDay);
+        	RecordFile.print("Afraid you didn't guess the full word today - the word is : " + WordleOfTheDay);
         } else {
         	//User has found word
         	System.out.println("Well done - you won todays wordle! Come back tomorrow for another go at the game");
+        	RecordFile.print("Well done - you won todays wordle! Come back tomorrow for another go at the game\n");
         }
         
+        
+        //Questionaire on whether the user liked their wordle of the day
+        System.out.println("\n\n\n*******************************************************************************");
+        System.out.println("Please fill out the following questionaire based on your worlde of the day");
+        
+        
+
+		HowWasYourW
 		
+		ordle g1 = new WordleQuestionaire();
+		System.out.println(g1.toString());
+		RecordFile.print ( g1.getClass().getName());
+		RecordFile.println (g1.toPrintFile());
+        
 		//close files
         
         FullWordDatabase.close();
+        RecordFile.close();
         console.close();
 	}//end main
 	

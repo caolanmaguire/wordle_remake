@@ -3,7 +3,7 @@ package wordle;
 import java.util.*;
 
 
-public abstract class HospitalWorker {
+public abstract class HowWasYourWordle {
 	 
 	//data members
 	String name;
@@ -18,12 +18,10 @@ public abstract class HospitalWorker {
 	
 	
 //constructor	
-	HospitalWorker()
+	HowWasYourWordle()
 	{
 		name = getNameWorker();
 		staffID = getStaffID();
-		hoursWorked = getHoursWorked();
-		hourlyRate = getHourlyRate();
 		weeklyWage = setWeeklyWage(hoursWorked, hourlyRate); 
 	}
 	
@@ -45,26 +43,7 @@ public abstract class HospitalWorker {
 		staffID = console.nextLine();
 		  
 		return staffID;
-	}
-//************************************************		
-	  	  
-	public int getHoursWorked()
-	{
-		System.out.println("How many hours do you work per week? ");
-		hoursWorked = console.nextInt();  
-		  
-		return hoursWorked;
-	}
-//*********************************************************		
- 	
-	public double getHourlyRate()
-	{
-		System.out.println("What is your hourly rate? ");
-		hourlyRate = console.nextDouble();  
-			  
-		return hourlyRate;
-	}
-//*****************************************************		
+	}	
 	  
 	public  double setWeeklyWage(int hoursWorked, double hourlyRate)
 	{
